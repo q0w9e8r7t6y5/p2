@@ -62,7 +62,6 @@
             <input type="radio" name="beans" value="none"> None<br>
 
         <h6>Fajita Veggies?</H6>
-
             <input type="radio" name="veg" value="Yes" checked> Yes<br>
             <input type="radio" name="veg" value="No"> No<br>
         </fieldset>
@@ -82,6 +81,9 @@
         <fieldset id="info2">
         <h6>Special Instructions</h6>
         <textarea rows="4" cols="50" name="comment" form="usrform">Type Here...</textarea>
+
+        <br>
+        <input type="submit" value="Submit">
 
     </form>
 
