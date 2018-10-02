@@ -1,7 +1,6 @@
 <?php
 require 'test.php';
 require 'validation-logic.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -35,18 +34,40 @@ require 'validation-logic.php';
 
     <form>
         <fieldset id="info">
+            <h5>Customer Information</h5>
             <label for='email'>Email</label>
             <input type='text' name='email' id='email' value='<?= $form->get('email', 'test@gmail.com') ?>'><br>
             <label for='firstname'>First Name (required|alpha)</label>
             <input type='text' name='firstname' id='firstname' value='<?= $form->get('firstname', 'John') ?>'><br>
             <label for='lastname'>Last Name (required|alpha)</label>
             <input type='text' name='lastname' id='lastname' value='<?= $form->get('lastname', 'Smith') ?>'><br>
-            <label for='age'>Phone Number</label>
+            <label for='age'>Phone Numbers</label>
             <input type='text' name='phone' value='<?= $form->get('phone', '2075551234') ?>'><br>
         </fieldset>
 
-<!--        <fieldset id="type">-->
-<!--        <h5>Type</h5>-->
+        <fieldset class='type'>
+            <h5>Type</h5>
+            <input type='radio' name='type' value='burrito' checked<?php if (isset($type) and $type == 'burrito') echo 'checked' ?>> Burrito<br>
+            <input type='radio' name='type' value='burrito bowl' <?php if (isset($type) and $type == 'burrito bowl') echo 'checked' ?>> Burrito Bowl<br>
+            <input type='radio' name='type' value='hard taco' <?php if (isset($type) and $type == 'hard taco') echo 'checked' ?>> Hard Shell Taco<br>
+            <input type='radio' name='type' value='soft taco' <?php if (isset($type) and $type == 'soft taco') echo 'checked' ?>> Soft Shell Taco<br>
+            <input type='radio' name='type' value='salad' <?php if (isset($type) and $type == 'salad') echo 'checked' ?>> Salad<br>
+        </fieldset>
+
+        <fieldset class='fill'>
+            <h5>Meat & Tofu Selection</h5>
+            <select name='fill' id='fill'>
+                <option value='chicken' <?php if ($fill == 'chicken') echo 'selected' ?>>Chicken</option>
+                <option value='carnitas' <?php if ($fill == 'carnitas') echo 'selected' ?>>Carnitas</option>
+                <option value='steak' <?php if ($fill == 'steak') echo 'selected' ?>>Steak</option>
+                <option value='chorizo' <?php if ($fill == 'chorizo') echo 'selected' ?>>Chorizo</option>
+                <option value='barbacoa' <?php if ($fill == 'barbacoa') echo 'selected' ?>>Barbacoa</option>
+                <option value='sofritas' <?php if ($fill == 'sofritas') echo 'selected' ?>>Sofritas(Tofu)</option>
+            </select>
+        </fieldset>
+
+
+        <!--        <fieldset id="type">-->
 <!--            <input type="radio" name="type" value="burrito" checked> Burrito<br>-->
 <!--            <input type="radio" name="type" value="bowl"> Burrito Bowl<br>-->
 <!--            <input type="radio" name="type" value="hardtaco"> Hard Shell Taco<br>-->
@@ -55,7 +76,6 @@ require 'validation-logic.php';
 <!--        </fieldset>-->
 <!---->
 <!--        <fieldset id="filling">-->
-<!--        <h5>Meat & Tofu Selection</h5>-->
 <!--            <select>-->
 <!--                <option value="chicken">Chicken</option>-->
 <!--                <option value="pork">Carnitas</option>-->
@@ -102,6 +122,16 @@ require 'validation-logic.php';
 <!---->
         <br>
         <input type="submit" value="Submit">
+
+        <?php if ($_GET) : ?>
+            <div class='alert alert-info' role='alert'>
+                You selected: <?= ucfirst($type) ?>
+                Filling: <?= ucfirst($fill) ?>
+            </div>
+
+
+
+        <?php endif; ?>
 
     </form>
 
