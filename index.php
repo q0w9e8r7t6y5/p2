@@ -15,6 +15,7 @@
 <div class="container">
 
     <h1>Sishir Yeety</h1>
+<<<<<<< HEAD
     <h2>Project 2: Chipotle "Express" Ordering System</h2>
 
     <form>
@@ -95,6 +96,10 @@
 
 
 
+=======
+    <h2>Project 2</h2>
+    <h5>TEST</H5>
+>>>>>>> 443105a2eb30252fa7eeca49dc3af9e19602986f
 
 </div>
 
