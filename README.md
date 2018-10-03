@@ -27,7 +27,12 @@
 1. Used given Form.php class (modified it to handle some processing)
 
 ## Code style divergences
-*list any divergences from PSR-1/PSR-2 and course guidelines on code style*
+
+1. No code style divergences from the guidelines.
+2. Only thing to note is that the w3validator does not seem to like the code phrase
+`checked = 'checked'` with php, even though it is the correct usage.
+3. A few lines of code on the order.php page go beyond the 80 characters because
+of the injection of php with HTML.
 
 ## Notes for instructor
 
@@ -42,3 +47,7 @@ not go onto the order page. If it throws no errors, then it will go to the next 
 3. Function inside total.php had to be separated out from logic.php, due to
 processing errors. After separating out the function into its own php page, the
 correct total value was able to be shown to the end user on the html page.
+
+4. Text area at the bottom has been set up to use GET in my example. If this was
+writing to a database and then showing the user a confirmation, the correct
+implementation would be POST.
