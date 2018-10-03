@@ -38,3 +38,7 @@ customizations.
 2. Form.php was slightly modified to include some processing. Basically, I made
 the main page, so that if you submit customer info and it fails validation, it will
 not go onto the order page. If it throws no errors, then it will go to the next page.
+
+3. Function inside total.php had to be separated out from logic.php, due to
+processing errors. After separating out the function into its own php page, the
+correct total value was able to be shown to the end user on the html page.
