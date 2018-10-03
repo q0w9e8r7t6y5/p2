@@ -114,11 +114,11 @@ require 'logic.php';
                         </tr>
                         <tr>
                             <td>Veggies:</td>
-                            <td><?= ucfirst($veggies) ?></td>
+                            <td><?= ucwords($veggies) ?></td>
                         </tr>
                         <tr>
                             <td>Topping:</td>
-                            <td>Yoshi Tannamuri</td>
+                            <td><?= ucwords($commaList) ?></td>
                         </tr>
                         <tr>
                             <td>Add'l Comments:</td>

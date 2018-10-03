@@ -1,6 +1,6 @@
 # Project 2
-+ By: *your first and last name*
-+ Production URL: <http://p2.yourdomain.com>
++ By: Sishir Yeety
++ Production URL: <http://p2.sy-dwa15.me>
 
 ## Outside resources
 *your list of outside resources go here*
@@ -28,4 +28,8 @@ https://stackoverflow.com/questions/28543752/multiple-radio-button-groups-in-one
 
 https://bootswatch.com
 
-https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link/2906611
+https://stackoverflow.com/questions/2906582/how-to-create-an-hml-button-that-acts-like-a-link/2906611
+
+https://stackoverflow.com/questions/2435216/how-to-create-comma-separated-list-from-array-in-php
+
+sdfjklfjsadlj

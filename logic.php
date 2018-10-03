@@ -14,9 +14,7 @@ $toppings = $_GET['toppings'] ?? null;
 
 $comment = $_GET['comment'] ?? null;
 
-
 $submitted = $_GET['submitted'] ?? false;
-$toppings = $_GET['toppings'] ?? null;
 
 $results = null;
 if ($submitted and $toppings) {
@@ -27,3 +25,5 @@ if ($submitted and $toppings) {
         $results .= $toppings . ' ';
     }
 }
+
+$commaList = implode(', ', $toppings);
