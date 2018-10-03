@@ -8,19 +8,19 @@ require 'validation-logic.php';
 
 <head>
 
+    <style>
+
+        h5 {
+            font-weight: bold
+        }
+
+    </style>
+
     <title>P2: Main Page</title>
     <meta charset="utf-8">
     <link rel='stylesheet' href='https://bootswatch.com/4/spacelab/bootstrap.min.css' type='text/css'>
 
 </head>
-
-<style>
-
-    h5 {
-        font-weight: bold
-    }
-
-</style>
 
 <body>
 
@@ -43,7 +43,7 @@ require 'validation-logic.php';
         <fieldset id="info">
             <h5>Customer Information</h5>
             <label for='email'>Email:</label>
-            <input type='text' name='email' id='email' value='<?= $form->get('email', 'email@gmail.com') ?>'><br>
+            <input type='text' name='email' id='email' value='<?= $form->get('email', 'username@email.com') ?>'><br>
             <label for='firstname'>First Name:</label>
             <input type='text' name='firstname' id='firstname' value='<?= $form->get('firstname', 'John') ?>'><br>
             <label for='lastname'>Last Name:</label>

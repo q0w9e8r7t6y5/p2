@@ -1,5 +1,6 @@
 <?php
 require 'logic.php';
+require 'total.php';
 ?>
 
 
@@ -9,19 +10,19 @@ require 'logic.php';
 
 <head>
 
+    <style>
+
+        h5, h6 {
+            font-weight: bold
+        }
+
+    </style>
+
     <title>P2: Order Page</title>
     <meta charset="utf-8">
     <link rel='stylesheet' href='https://bootswatch.com/4/spacelab/bootstrap.min.css' type='text/css'>
 
 </head>
-
-<style>
-
-    h5, h6 {
-        font-weight: bold
-    }
-
-</style>
 
 <body>
 
@@ -60,7 +61,7 @@ require 'logic.php';
                 <option value='steak' <?php if ($fill == 'steak') echo 'selected' ?>>Steak</option>
                 <option value='chorizo' <?php if ($fill == 'chorizo') echo 'selected' ?>>Chorizo</option>
                 <option value='barbacoa' <?php if ($fill == 'barbacoa') echo 'selected' ?>>Barbacoa</option>
-                <option value='sofritas' <?php if ($fill == 'sofritas') echo 'selected' ?>>Sofritas(Tofu)</option>
+                <option value='sofritas' <?php if ($fill == 'sofritas') echo 'selected' ?>>Sofritas (Tofu)</option>
             </select>
         </fieldset>
         <br>
@@ -166,7 +167,7 @@ require 'logic.php';
                     <td><?= ucwords($type) ?></td>
                 </tr>
                 <tr>
-                    <td>Filling:</td>
+                    <td>Fill Selection:</td>
                     <td><?= ucwords($fill) ?></td>
                 </tr>
                 <tr>
@@ -191,16 +192,7 @@ require 'logic.php';
                 </tr>
                 <tr>
                     <td>Total (with tax):</td>
-                    <!--                    <td>--><? //= ucfirst($total) ?>
-                    <td>
-                        <?php
-                        if ($fill != "sofritas")
-                            echo "$7.95";
-                        else if ($fill == "sofritas")
-                            echo "$6.50";
-                        ?>
-                    </td>
-                </tr>
+                    <td><?php echo $total; ?></td>
             </table>
 
         </div>

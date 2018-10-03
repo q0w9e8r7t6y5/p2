@@ -30,4 +30,11 @@
 *list any divergences from PSR-1/PSR-2 and course guidelines on code style*
 
 ## Notes for instructor
-*any notes for me to refer to while grading; if none, omit this section*
+
+1. Menu is (sorta) modeled after Chipotles. If I were to continue with this project,
+the next step would be add more options, such as kids meals and drinks; plus more
+customizations.
+
+2. Form.php was slightly modified to include some processing. Basically, I made
+the main page, so that if you submit customer info and it fails validation, it will
+not go onto the order page. If it throws no errors, then it will go to the next page.
