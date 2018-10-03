@@ -24,7 +24,7 @@ require 'total.php';
     <h4>Project 2: Chipotle Order Page</h4><br>
 
     <h6>
-        <b>Please pick your dish type, meat/tofu selection, and toppings. If there are any special instructions, put them in the textbox and press submit to see your order confirmation</b>
+        <b>Please pick your dish type, meat/tofu selection, and toppings. If there are any special instructions, put them in the textbox and press submit to confirm your order!</b>
     </h6><br>
 
     <form method='GET'>
