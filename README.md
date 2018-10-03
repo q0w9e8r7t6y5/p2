@@ -11,6 +11,8 @@
 5. php redirection inside form.php: <https://stackoverflow.com/questions/35891799/redirect-to-home-php-if-getid-is-invalid-or-empty>
 6. Multiple radio button groups in one form: <https://stackoverflow.com/questions/28543752/multiple-radio-button-groups-in-one-form>
 7. Outputting array into comma sep. list on order page: <https://stackoverflow.com/questions/2435216/how-to-create-comma-separated-list-from-array-in-php>
+8. Radio button defaults: <https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default>
+9. php if-else statement help: <http://w3schools.sinsixx.com/php/php_if_else.asp.htm>
 
 ## 3 Unique inputs
 
@@ -29,7 +31,3 @@
 
 ## Notes for instructor
 *any notes for me to refer to while grading; if none, omit this section*
-
-https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default
-
-http://w3schools.sinsixx.com/php/php_if_else.asp.htm

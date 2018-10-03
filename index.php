@@ -14,12 +14,20 @@ require 'validation-logic.php';
 
 </head>
 
+<style>
+
+    h5 {
+        font-weight: bold
+    }
+
+</style>
+
 <body>
 
 <div class="container">
 
-    <h1>Sishir Yeety</h1>
-    <h2>Project 2: Chipotle Test Ordering System</h2>
+    <h2>Sishir Yeety</h2>
+    <h4>Project 2: Food Ordering System</h4><br>
 
     <?php if (isset($errors) && $errors) : ?>
         <div class='alert alert-danger'>
@@ -43,6 +51,7 @@ require 'validation-logic.php';
             <label for='phone'>Phone Number:</label>
             <input type='text' name='phone' id='phone' value='<?= $form->get('phone', '2075551234') ?>'><br>
         </fieldset>
+        <br>
 
         <input type="submit" value="Submit">
     </form>
