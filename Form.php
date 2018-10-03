@@ -91,12 +91,9 @@ class Form
 
         if (empty($errors)) {
             header("Location: order.php");
-        }
-
-        else {
+        } else {
             return $errors;
         }
-
 //        return $errors;
     }
 

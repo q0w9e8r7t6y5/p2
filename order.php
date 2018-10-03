@@ -28,7 +28,7 @@ require 'logic.php';
             <input type='radio'
                    name='type'
                    value='burrito'
-                   checked<?php if (isset($type) and $type == 'burrito') echo 'checked' ?>> Burrito<br>
+                   checked='checked' <?php if (isset($type) and $type == 'burrito') echo 'checked' ?>> Burrito<br>
             <input type='radio'
                    name='type'
                    value='burrito bowl' <?php if (isset($type) and $type == 'burrito bowl') echo 'checked' ?>> Burrito Bowl<br>
@@ -61,7 +61,7 @@ require 'logic.php';
             <input type='radio'
                    name='rice'
                    value='White Rice'
-                   checked<?php if (isset($rice) and $rice == 'White Rice') echo 'checked' ?>> White Rice<br>
+                   checked='checked'<?php if (isset($rice) and $rice == 'White Rice') echo 'checked' ?>> White Rice<br>
             <input type='radio'
                    name='rice'
                    value='Brown Rice' <?php if (isset($rice) and $rice == 'Brown Rice') echo 'checked' ?>> Brown Rice<br>
@@ -75,10 +75,11 @@ require 'logic.php';
             <input type='radio'
                    name='beans'
                    value='Black Beans'
-                   checked<?php if (isset($beans) and $beans == 'White Rice') echo 'checked' ?>> Black Beans<br>
+                   checked='checked'
+                <?php if (isset($beans) and $beans == 'Black Beans') echo 'checked' ?>> Black Beans<br>
             <input type='radio'
                    name='beans'
-                   value='Pinto Beans' <?php if (isset($beans) and $beans == 'Brown Rice') echo 'checked' ?>> Pinto Beans<br>
+                   value='Pinto Beans' <?php if (isset($beans) and $beans == 'Pinto Beans') echo 'checked' ?>> Pinto Beans<br>
             <input type='radio'
                    name='beans'
                    value='None' <?php if (isset($beans) and $beans == 'None') echo 'checked' ?>> None<br>
@@ -89,7 +90,7 @@ require 'logic.php';
             <input type='radio'
                    name='veggies'
                    value='Yes'
-                   checked<?php if (isset($veggies) and $veggies == 'Yes') echo 'checked' ?>> Yes<br>
+                   checked='checked'<?php if (isset($veggies) and $veggies == 'Yes') echo 'checked' ?>> Yes<br>
             <input type='radio'
                    name='veggies'
                    value='No' <?php if (isset($veggies) and $veggies == 'No') echo 'checked' ?>> No<br>
@@ -141,41 +142,51 @@ require 'logic.php';
     <?php if ($_GET) : ?>
         <br>
         <div class='alert alert-info' role='alert'>
-            <h5>Your order has been submitted!
-                <h5>
+            <h5>Your order has been submitted!</h5>
 
-                    <h6>Order Details</h6>
+            <h6>Order Details</h6>
 
-                    <table>
-                        <tr>
-                            <td>Type:</td>
-                            <td><?= ucwords($type) ?></td>
-                        </tr>
-                        <tr>
-                            <td>Filling:</td>
-                            <td><?= ucwords($fill) ?></td>
-                        </tr>
-                        <tr>
-                            <td>Rice:</td>
-                            <td><?= ucwords($rice) ?></td>
-                        </tr>
-                        <tr>
-                            <td>Veggies:</td>
-                            <td><?= ucwords($veggies) ?></td>
-                        </tr>
-                        <tr>
-                            <td>Topping:</td>
-                            <td><?= ucwords($commaList) ?></td>
-                        </tr>
-                        <tr>
-                            <td>Add'l Comments:</td>
-                            <td><?= ucwords($comment) ?></td>
-                        </tr>
-<!--                        <tr>-->
-<!--                            <td>Total (with tax):</td>-->
-<!--                            <td>--><?//=  ?><!--</td>-->
-<!--                        </tr>-->
-                    </table>
+            <table>
+                <tr>
+                    <td>Type:</td>
+                    <td><?= ucwords($type) ?></td>
+                </tr>
+                <tr>
+                    <td>Filling:</td>
+                    <td><?= ucwords($fill) ?></td>
+                </tr>
+                <tr>
+                    <td>Rice:</td>
+                    <td><?= ucwords($rice) ?></td>
+                </tr>
+                <tr>
+                    <td>Beans:</td>
+                    <td><?= ucwords($beans) ?></td>
+                </tr>
+                <tr>
+                    <td>Veggies:</td>
+                    <td><?= ucwords($veggies) ?></td>
+                </tr>
+                <tr>
+                    <td>Topping:</td>
+                    <td><?= ucwords($commaList) ?></td>
+                </tr>
+                <tr>
+                    <td>Add'l Comments:</td>
+                    <td><?= ucwords($comment) ?></td>
+                </tr>
+                <tr>
+                    <td>Total (with tax):</td>
+                    <td>
+                        <?php
+                        if ($fill != "sofritas")
+                            echo "$7.95";
+                        else if ($fill == "sofritas")
+                            echo "$6.50";
+                        ?>
+                    </td>
+                </tr>
+            </table>
 
         </div>
     <?php endif; ?>
