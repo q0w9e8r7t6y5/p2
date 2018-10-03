@@ -171,6 +171,10 @@ require 'logic.php';
                             <td>Add'l Comments:</td>
                             <td><?= ucwords($comment) ?></td>
                         </tr>
+<!--                        <tr>-->
+<!--                            <td>Total (with tax):</td>-->
+<!--                            <td>--><?//=  ?><!--</td>-->
+<!--                        </tr>-->
                     </table>
 
         </div>

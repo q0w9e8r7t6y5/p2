@@ -4,9 +4,9 @@ $type = $_GET['type'] ?? null;
 
 $fill = $_GET['fill'] ?? null;
 
-$rice = $_GET['rice'] ?? null;
-
 $beans = $_GET['beans'] ?? null;
+
+$rice = $_GET['rice'] ?? null;
 
 $veggies = $_GET['veggies'] ?? null;
 
@@ -17,11 +17,8 @@ $comment = $_GET['comment'] ?? null;
 $submitted = $_GET['submitted'] ?? false;
 
 $results = null;
-if ($submitted and $toppings) {
-    foreach ($topping as $toppings) {
-        $results .= $toppings . ' ';
-    }
-}
+
+$results .= $toppings;
 
 if (empty($toppings)) {
     return $commaList = 'None';
@@ -32,3 +29,12 @@ else {
 }
 
 
+//if ($fill != 'sofritas') {
+//    return $total = 6.95;
+//}
+//
+//else {
+//    return $total = 7.95;
+//}
+//
+//$rice = $_GET['rice'] ?? null;
