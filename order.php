@@ -10,14 +10,6 @@ require 'total.php';
 
 <head>
 
-    <style>
-
-        h5, h6 {
-            font-weight: bold
-        }
-
-    </style>
-
     <title>P2: Order Page</title>
     <meta charset="utf-8">
     <link rel='stylesheet' href='https://bootswatch.com/4/spacelab/bootstrap.min.css' type='text/css'>
@@ -29,7 +21,11 @@ require 'total.php';
 <div class="container">
 
     <h2>Sishir Yeety</h2>
-    <h4>Project 2: Order Page</h4><br>
+    <h4>Project 2: Chipotle Order Page</h4><br>
+
+    <h6>
+        <b>Please pick your dish type, meat/tofu selection, and toppings. If there are any special instructions, put them in the textbox and press submit to see your order confirmation</b>
+    </h6><br>
 
     <form method='GET'>
         <fieldset class='type'>

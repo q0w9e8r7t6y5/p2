@@ -8,14 +8,6 @@ require 'validation-logic.php';
 
 <head>
 
-    <style>
-
-        h5 {
-            font-weight: bold
-        }
-
-    </style>
-
     <title>P2: Main Page</title>
     <meta charset="utf-8">
     <link rel='stylesheet' href='https://bootswatch.com/4/spacelab/bootstrap.min.css' type='text/css'>
@@ -28,6 +20,8 @@ require 'validation-logic.php';
 
     <h2>Sishir Yeety</h2>
     <h4>Project 2: Food Ordering System</h4><br>
+
+    <h6><b>Please enter in your information and press submit to continue to the order page</b></h6><br>
 
     <?php if (isset($errors) && $errors) : ?>
         <div class='alert alert-danger'>
