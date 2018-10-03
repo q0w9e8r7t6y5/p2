@@ -18,12 +18,17 @@ $submitted = $_GET['submitted'] ?? false;
 
 $results = null;
 if ($submitted and $toppings) {
-    # Loop through each day checkbox that was selected and append its value to a string
-    # Note that because the `days` checkboxes were grouped together as an array (name='days[]')
-    # that they are available out of the form request as an array
     foreach ($topping as $toppings) {
         $results .= $toppings . ' ';
     }
 }
 
-$commaList = implode(', ', $toppings);
+if (empty($toppings)) {
+    return $commaList = 'None';
+}
+
+else {
+    return $commaList = implode(', ', $toppings);
+}
+
+

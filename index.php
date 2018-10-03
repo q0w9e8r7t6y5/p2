@@ -40,8 +40,8 @@ require 'validation-logic.php';
             <input type='text' name='firstname' id='firstname' value='<?= $form->get('firstname', 'John') ?>'><br>
             <label for='lastname'>Last Name:</label>
             <input type='text' name='lastname' id='lastname' value='<?= $form->get('lastname', 'Smith') ?>'><br>
-            <label for='age'>Phone Number:</label>
-            <input type='text' name='phone' value='<?= $form->get('phone', '2075551234') ?>'><br>
+            <label for='phone'>Phone Number:</label>
+            <input type='text' name='phone' id='phone' value='<?= $form->get('phone', '2075551234') ?>'><br>
         </fieldset>
 
         <input type="submit" value="Submit">
