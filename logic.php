@@ -1,10 +1,16 @@
 <?php
-# Get day info from GET form request; if not present, default to `null`
+
 $type = $_GET['type'] ?? null;
 
 $fill = $_GET['fill'] ?? null;
 
-$fill2 = $_GET['rice'] ?? null;
+$rice = $_GET['rice'] ?? null;
+
+$beans = $_GET['beans'] ?? null;
+
+$veggies = $_GET['veggies'] ?? null;
+
+$toppings = $_GET['toppings'] ?? null;
 
 $comment = $_GET['comment'] ?? null;
 

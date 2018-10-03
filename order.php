@@ -22,7 +22,7 @@ require 'logic.php';
     <h1>Sishir Yeety</h1>
     <h2>Project 2: Order Page</h2>
 
-    <form>
+    <form method='GET'>
         <fieldset class='type'>
             <h5>Type</h5>
             <input type='radio' name='type' value='burrito' checked<?php if (isset($type) and $type == 'burrito') echo 'checked' ?>> Burrito<br>
@@ -84,15 +84,50 @@ require 'logic.php';
 
         <br>
 
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <form method="get" action="index.php">
+        <button type="submit">Home Page</button>
+    </form>
+
         <?php if ($_GET) : ?>
             <br>
             <div class='alert alert-info' role='alert'>
-                You selected: <?= ucfirst($comment) ?><br>
+                <h5>Your order has been submitted!<h5>
+
+                <h6>Order Details</h6>
+
+                    <table>
+                        <tr>
+                            <td>Type:</td>
+                            <td><?= ucwords($type) ?></td>
+                        </tr>
+                        <tr>
+                            <td>Filling:</td>
+                            <td><?= ucwords($fill) ?></td>
+                        </tr>
+                        <tr>
+                            <td>Rice:</td>
+                            <td><?= ucwords($rice) ?></td>
+                        </tr>
+                        <tr>
+                            <td>Veggies:</td>
+                            <td><?= ucfirst($veggies) ?></td>
+                        </tr>
+                        <tr>
+                            <td>Topping:</td>
+                            <td>Yoshi Tannamuri</td>
+                        </tr>
+                        <tr>
+                            <td>Add'l Comments:</td>
+                            <td><?= ucwords($comment) ?></td>
+                        </tr>
+                    </table>
+
             </div>
         <?php endif; ?>
-
-        <input type="submit" value="Submit">
-    </form>
 
 </div>
 

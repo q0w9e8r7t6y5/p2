@@ -21,3 +21,11 @@
 
 
 https://www.w3schools.com/Php/php_form_complete.asp
+http://php.net/manual/en/function.ucfirst.php
+https://stackoverflow.com/questions/35891799/redirect-to-home-php-if-getid-is-invalid-or-empty
+
+https://stackoverflow.com/questions/28543752/multiple-radio-button-groups-in-one-form
+
+https://bootswatch.com
+
+https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link/2906611
