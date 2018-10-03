@@ -29,3 +29,7 @@
 
 ## Notes for instructor
 *any notes for me to refer to while grading; if none, omit this section*
+
+https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default
+
+http://w3schools.sinsixx.com/php/php_if_else.asp.htm
