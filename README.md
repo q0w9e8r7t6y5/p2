@@ -3,33 +3,29 @@
 + Production URL: <http://p2.sy-dwa15.me>
 
 ## Outside resources
-*your list of outside resources go here*
+
+1. Bootstrap Theme: <https://bootswatch.com/spacelab>
+2. php ucfirst/ucword functions: <http://php.net/manual/en/function.ucfirst.php>
+3. Home Page button: <https://stackoverflow.com/questions/2906582/how-to-create-an-hml-button-that-acts-like-a-link/2906611>
+4. php form submission resource: <https://www.w3schools.com/Php/php_form_complete.asp>
+5. php redirection inside form.php: <https://stackoverflow.com/questions/35891799/redirect-to-home-php-if-getid-is-invalid-or-empty>
+6. Multiple radio button groups in one form: <https://stackoverflow.com/questions/28543752/multiple-radio-button-groups-in-one-form>
+7. Outputting array into comma sep. list on order page: <https://stackoverflow.com/questions/2435216/how-to-create-comma-separated-list-from-array-in-php>
 
 ## 3 Unique inputs
-*You don't have to list all inputs, just 3 unique ones. The following is an example of what I'd put if my project was the xkcd Password Generator: (1) Text input to indicate number of words in password, (2) Checkbox to indicate whether to include a number (3) Dropdown to indicate what symbol to include*
+
+1. Multiple individual text boxes (names, email, phone number)
+2. Multiple groups of radio buttons (type, rice, beans, veggies)
+3. Dropdown menu to specify meat/tofu selection
+4. One large group of checkboxes (toppings)
+5. Text area (bottom of order page) for special instructions
 
 ## Class
-*List the name of the class you're using, e.g. `Form.php`, `Password.php`, etc.*
+
+1. Used given Form.php class (modified it to handle some processing)
 
 ## Code style divergences
 *list any divergences from PSR-1/PSR-2 and course guidelines on code style*
 
 ## Notes for instructor
 *any notes for me to refer to while grading; if none, omit this section*
-
-
-
-
-https://www.w3schools.com/Php/php_form_complete.asp
-http://php.net/manual/en/function.ucfirst.php
-https://stackoverflow.com/questions/35891799/redirect-to-home-php-if-getid-is-invalid-or-empty
-
-https://stackoverflow.com/questions/28543752/multiple-radio-button-groups-in-one-form
-
-https://bootswatch.com
-
-https://stackoverflow.com/questions/2906582/how-to-create-an-hml-button-that-acts-like-a-link/2906611
-
-https://stackoverflow.com/questions/2435216/how-to-create-comma-separated-list-from-array-in-php
-
-sdfjklfjsadlj
