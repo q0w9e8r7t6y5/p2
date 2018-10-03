@@ -87,7 +87,17 @@ class Form
         # Set public property hasErrors as Boolean
         $this->hasErrors = !empty($errors);
 
-        return $errors;
+        # ADDED NEW FUNCTION, WHERE IF THERE ARE NO ERRORS, IT WILL REDIRECT TO ORDER PAGE
+
+        if (empty($errors)) {
+            header("Location: order.php");
+        }
+
+        else {
+            return $errors;
+        }
+
+//        return $errors;
     }
 
     ### VALIDATION METHODS FOUND BELOW HERE ###
