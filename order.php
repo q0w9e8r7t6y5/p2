@@ -33,7 +33,7 @@ require 'total.php';
             <input type='radio'
                    name='type'
                    value='burrito'
-                   checked='checked' <?php if (isset($type) and $type == 'burrito') echo 'checked' ?>> Burrito<br>
+                <?php if (!isset($type) or (isset($type) and $type == 'burrito')) echo 'checked' ?>> Burrito<br>
             <input type='radio'
                    name='type'
                    value='burrito bowl' <?php if (isset($type) and $type == 'burrito bowl') echo 'checked' ?>> Burrito Bowl<br>
@@ -52,12 +52,12 @@ require 'total.php';
         <fieldset class='fill'>
             <h5>Meat & Tofu Selection</h5>
             <select name='fill' id='fill'>
-                <option value='chicken' <?php if ($fill == 'chicken') echo 'selected' ?>>Chicken</option>
-                <option value='carnitas' <?php if ($fill == 'carnitas') echo 'selected' ?>>Carnitas</option>
-                <option value='steak' <?php if ($fill == 'steak') echo 'selected' ?>>Steak</option>
-                <option value='chorizo' <?php if ($fill == 'chorizo') echo 'selected' ?>>Chorizo</option>
-                <option value='barbacoa' <?php if ($fill == 'barbacoa') echo 'selected' ?>>Barbacoa</option>
-                <option value='sofritas' <?php if ($fill == 'sofritas') echo 'selected' ?>>Sofritas (Tofu)</option>
+                <option value='chicken' <?php if ($fill == 'chicken') echo 'selected' ?>>Chicken ($7.95)</option>
+                <option value='carnitas' <?php if ($fill == 'carnitas') echo 'selected' ?>>Carnitas ($7.95)</option>
+                <option value='steak' <?php if ($fill == 'steak') echo 'selected' ?>>Steak ($7.95)</option>
+                <option value='chorizo' <?php if ($fill == 'chorizo') echo 'selected' ?>>Chorizo ($7.95)</option>
+                <option value='barbacoa' <?php if ($fill == 'barbacoa') echo 'selected' ?>>Barbacoa ($7.95)</option>
+                <option value='sofritas' <?php if ($fill == 'sofritas') echo 'selected' ?>>Sofritas/Tofu ($6.50)</option>
             </select>
         </fieldset>
         <br>
@@ -68,7 +68,7 @@ require 'total.php';
             <input type='radio'
                    name='rice'
                    value='White Rice'
-                   checked='checked'<?php if (isset($rice) and $rice == 'White Rice') echo 'checked' ?>> White Rice<br>
+                <?php if (!isset($rice) or (isset($rice) and $rice == 'White Rice')) echo 'checked' ?>> White Rice<br>
             <input type='radio'
                    name='rice'
                    value='Brown Rice' <?php if (isset($rice) and $rice == 'Brown Rice') echo 'checked' ?>> Brown Rice<br>
@@ -83,8 +83,7 @@ require 'total.php';
             <input type='radio'
                    name='beans'
                    value='Black Beans'
-                   checked='checked'
-                <?php if (isset($beans) and $beans == 'Black Beans') echo 'checked' ?>> Black Beans<br>
+                <?php if (!isset($beans) or (isset($beans) and $beans == 'Black Beans')) echo 'checked' ?>> Black Beans<br>
             <input type='radio'
                    name='beans'
                    value='Pinto Beans' <?php if (isset($beans) and $beans == 'Pinto Beans') echo 'checked' ?>> Pinto Beans<br>
@@ -99,7 +98,7 @@ require 'total.php';
             <input type='radio'
                    name='veggies'
                    value='Yes'
-                   checked='checked'<?php if (isset($veggies) and $veggies == 'Yes') echo 'checked' ?>> Yes<br>
+                <?php if (!isset($veggies) or (isset($veggies) and $veggies == 'Yes')) echo 'checked' ?>> Yes<br>
             <input type='radio'
                    name='veggies'
                    value='No' <?php if (isset($veggies) and $veggies == 'No') echo 'checked' ?>> No<br>

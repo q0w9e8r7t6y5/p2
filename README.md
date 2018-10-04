@@ -28,10 +28,9 @@
 
 ## Code style divergences
 
-1. No code style divergences from the guidelines.
-2. Only thing to note is that the w3validator does not seem to like the code phrase
-`checked = 'checked'` with php, even though it is the correct usage.
-3. A few lines of code on the order.php page go beyond the 80 characters because
+1. No code style divergences from the guidelines. Used phpstorm's reformat code
+function to check.
+2. A few lines of code on the order.php page go beyond the 80 characters because
 of the injection of php with HTML.
 
 ## Notes for instructor
@@ -42,7 +41,7 @@ customizations.
 
 2. Form.php was slightly modified to include some processing. Basically, I made
 the main page, so that if you submit customer info and it fails validation, it will
-not go onto the order page. If it throws no errors, then it will go to the next page.
+not go to the order page. If it throws no errors, then it will go to the next page.
 
 3. Function inside total.php had to be separated out from logic.php, due to
 processing errors. After separating out the function into its own php page, the
